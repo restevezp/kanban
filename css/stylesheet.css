@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5; }
+
+main {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 40px 20px;
+  text-align: center; }
+
+main h1 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 15px;
+  display: inline-block; }
+
+.column {
+  float: left;
+  width: 19%;
+  margin-right: 1%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+
+.column h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: bold; }
+
+.card {
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; }
+
+.card h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.card p {
+  margin-bottom: 20px;
+  font-size: 1.2rem; }
+
+.card .close::before {
+  content: "x";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-weight: bold; }
+
+.card:hover {
+  cursor: pointer; }
+
+.card .tag {
+  display: inline-block;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  margin-right: 1px; }
+
+.card .tag i {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 5px; }
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1640039627651-9568241b6ab4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-attachment: scroll;
+  background-size: cover; }
+
+main h1 {
+  color: white;
+  background-color: rgba(0, 0, 255, 0.2); }
+
+main *:not(h1) {
+  text-align: left; }
+
+#kanban {
+  overflow: hidden;
+  display: block; }
+
+.column {
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.column:last-child {
+  margin-right: 0; }
+
+.card {
+  background-color: #fff; }
+  .card .tags {
+    margin-top: 10px; }
+  .card .tag {
+    background-color: #ddd; }
+  .card .front {
+    background-color: #0aae33; }
+  .card .back {
+    background-color: #ff4d4d; }
+  .card .device {
+    background-color: #ffa64d; }
+  .card .tag i {
+    color: #fff; }
+  .card .tag:last-child {
+    margin-right: 0; }
+
+.card:last-child {
+  margin-bottom: 0; }
+
+.card .close::before {
+  background-color: #ff4d4d;
+  color: white; }
+
+.card:hover {
+  background-color: rgba(0, 0, 255, 0.2);
+  color: white; }
+
+.card:hover i {
+  color: rgba(0, 0, 255, 0.9); }
+
+.card:hover .close::before {
+  background-color: black; }
+
+/*# sourceMappingURL=stylesheet.css.map */

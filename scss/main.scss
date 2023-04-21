@@ -1,0 +1,106 @@
+@import "variables";
+@import "functions";
+
+* {
+    @extend %base-rules;
+}
+
+body {
+    background-image: $body-background-image;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+main {
+    @extend %main-rules;
+    h1 {
+        @extend %main-title-h1-titulo;
+        color: $h1-titulo-color;
+        background-color: $h1-titulo-background-color;
+    }
+}
+
+main *:not(h1) {
+    text-align: left;
+}
+
+#kanban {
+    overflow: hidden;
+    display: block;
+}
+
+.column {
+    @extend %column;
+    background-color: $column-background-color;
+        h2 {
+            @extend %column-h2;
+        }
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.card {
+    @extend %card;
+    background-color: $card-background-color;
+    h3 {
+        @extend %card-h3;
+    }
+    p {
+        @extend %card-p;
+    }
+    .tags {
+        margin-top: 10px;
+    }
+    
+    .tag {
+        @extend %tag;
+        background-color: $tag-background-color;
+    }
+        .front {
+            background-color: $front-background-color;
+        }
+        .back {
+            background-color: $back-background-color;  
+        }
+        .device {
+            background-color: $device-background-color;
+        }
+
+        
+        .tag i {
+            @extend %tag-i;
+            color: $tag-i-color;
+
+        }
+        
+        .tag:last-child{
+            margin-right: 0;
+        }
+    
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card .close::before {
+    @extend %card-close-before;
+    background-color: $card-close-before-background-color;
+    color: $card-close-before-color;
+}
+
+.card:hover {
+    @extend %card-hover;
+    background-color: $card-hover-background-color;
+    color:$card-hover-color;
+}
+
+.card:hover i {
+    color: $card-hover-i-color;
+}
+
+.card:hover .close::before {
+    background-color: $card-hover-close-before-background-color;
+}

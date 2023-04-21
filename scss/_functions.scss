@@ -1,0 +1,95 @@
+@import "variables";
+
+%base-rules {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+%main-rules {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+%main-title-h1-titulo {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+%column {
+    float: left;
+    width: 19%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+
+%column-h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+%card {
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+%card-h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+%card-p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+%card-close-before{
+    content: "x";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+%card-hover {
+    cursor: pointer;
+}
+
+
+%tag {
+    display: inline-block;
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    margin-right: 1px;
+}
+
+%tag-i {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
